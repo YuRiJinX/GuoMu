@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A62F30C1FFF702E0097ABA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62F30B1FFF702E0097ABA0 /* AppDelegate.swift */; };
 		4A62F30E1FFF702E0097ABA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62F30D1FFF702E0097ABA0 /* ViewController.swift */; };
-		4A62F3111FFF702E0097ABA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A62F30F1FFF702E0097ABA0 /* Main.storyboard */; };
+		4A62F3111FFF702E0097ABA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A62F30F1FFF702E0097ABA0 /* Main.storyboard */; settings = {ASSET_TAGS = (Main, ); }; };
 		4A62F3131FFF702E0097ABA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A62F3121FFF702E0097ABA0 /* Assets.xcassets */; };
 		4A62F3161FFF702E0097ABA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A62F3141FFF702E0097ABA0 /* LaunchScreen.storyboard */; };
 		4A62F3211FFF702E0097ABA0 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A62F3201FFF702E0097ABA0 /* __Tests.swift */; };
@@ -187,6 +187,9 @@
 		4A62F3001FFF702E0097ABA0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					Main,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "金乃德";

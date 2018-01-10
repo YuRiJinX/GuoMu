@@ -1,24 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nA1-f2-TKa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="2Ws-zU-d4V">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="nA1-f2-TKa" customClass="ViewController" customModule="过目" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cef-ck-w4r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1k-Vd-vCb" userLabel="Subview1">
+                                <rect key="frame" x="20" y="59" width="335" height="578"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITn-Me-Gng" userLabel="Button1">
+                                        <rect key="frame" x="0.0" y="537" width="112" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="知道"/>
+                                        <connections>
+                                            <action selector="leftButtonTouch:" destination="nA1-f2-TKa" eventType="touchUpInside" id="6HS-mg-pUv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-iP-6VQ" userLabel="Button2">
+                                        <rect key="frame" x="243" y="548" width="112" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="不确定"/>
+                                        <connections>
+                                            <action selector="MidButtonTouch:" destination="nA1-f2-TKa" eventType="touchUpInside" id="5e5-Id-tMf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-Uj-qBQ" userLabel="Button3">
+                                        <rect key="frame" x="289" y="548" width="112" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="不知道"/>
+                                        <connections>
+                                            <action selector="rightButton:" destination="nA1-f2-TKa" eventType="touchUpInside" id="bMr-Va-Bsg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3l-u4-nrn">
+                                        <rect key="frame" x="20" y="50" width="295" height="67.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="汤姆米切尔提出的机器学习的定义">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="PingFangSC-Regular"/>
+                                                    <font key="NSOriginalFont" size="24" name="PingFangSC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXs-sn-QIc">
+                                        <rect key="frame" x="30" y="187.5" width="275" height="239.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="A computer program is said to learn from experience ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="E">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" with respect to some class of tasks ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="T">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" and performance measure ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="P">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=", if its performance at tasks in ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="T">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=", as measured by P,improves with experience ">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="E">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=".">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="20" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bXs-sn-QIc" firstAttribute="centerX" secondItem="L1k-Vd-vCb" secondAttribute="centerX" id="0R4-4U-fgb"/>
+                                    <constraint firstItem="bXs-sn-QIc" firstAttribute="top" secondItem="n3l-u4-nrn" secondAttribute="bottom" constant="70" id="8SS-Xi-eGg"/>
+                                    <constraint firstItem="bXs-sn-QIc" firstAttribute="leading" secondItem="L1k-Vd-vCb" secondAttribute="leading" constant="30" id="NKB-Mu-Ksf"/>
+                                    <constraint firstAttribute="trailing" secondItem="bXs-sn-QIc" secondAttribute="trailing" constant="30" id="NoG-zT-8Hz"/>
+                                    <constraint firstAttribute="trailing" secondItem="n3l-u4-nrn" secondAttribute="trailing" constant="20" id="gHY-Zw-aP5"/>
+                                    <constraint firstItem="n3l-u4-nrn" firstAttribute="top" secondItem="L1k-Vd-vCb" secondAttribute="top" constant="50" id="hE1-0s-ROd"/>
+                                    <constraint firstItem="n3l-u4-nrn" firstAttribute="leading" secondItem="L1k-Vd-vCb" secondAttribute="leading" constant="20" id="ip4-8A-N0T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQX-po-3DW" userLabel="Subview2">
+                                <rect key="frame" x="20" y="59" width="335" height="578"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP3-dd-xDJ">
+                                        <rect key="frame" x="20" y="175.5" width="295" height="67.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="汤姆米切尔提出的机器学习的定义">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="PingFangSC-Regular"/>
+                                                    <font key="NSOriginalFont" size="24" name="PingFangSC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hP3-dd-xDJ" firstAttribute="leading" secondItem="aQX-po-3DW" secondAttribute="leading" constant="20" id="3dM-aH-Aud"/>
+                                    <constraint firstItem="hP3-dd-xDJ" firstAttribute="centerX" secondItem="aQX-po-3DW" secondAttribute="centerX" id="ilN-UE-Khz"/>
+                                    <constraint firstItem="hP3-dd-xDJ" firstAttribute="centerY" secondItem="aQX-po-3DW" secondAttribute="centerY" constant="-80" id="oFf-0G-qZE"/>
+                                    <constraint firstAttribute="trailing" secondItem="hP3-dd-xDJ" secondAttribute="trailing" constant="20" id="ugH-OM-Knl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97250014543533325" green="0.97649246454238892" blue="0.98417884111404419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aQX-po-3DW" secondAttribute="bottom" constant="30" id="0af-UJ-IB7"/>
+                            <constraint firstItem="L1k-Vd-vCb" firstAttribute="top" secondItem="Cef-ck-w4r" secondAttribute="top" constant="59" id="Euu-z4-S3Z"/>
+                            <constraint firstItem="L1k-Vd-vCb" firstAttribute="leading" secondItem="pNJ-B6-G0I" secondAttribute="leading" constant="20" id="I5g-jn-EAd"/>
+                            <constraint firstItem="aQX-po-3DW" firstAttribute="top" secondItem="Cef-ck-w4r" secondAttribute="top" constant="59" id="Mtq-GS-iEr"/>
+                            <constraint firstItem="pNJ-B6-G0I" firstAttribute="trailing" secondItem="aQX-po-3DW" secondAttribute="trailing" constant="20" id="OC5-Se-p8U"/>
+                            <constraint firstItem="aQX-po-3DW" firstAttribute="leading" secondItem="pNJ-B6-G0I" secondAttribute="leading" constant="20" id="ZZ0-l7-rIF"/>
+                            <constraint firstItem="pNJ-B6-G0I" firstAttribute="trailing" secondItem="L1k-Vd-vCb" secondAttribute="trailing" constant="20" id="n67-eO-9m3"/>
+                            <constraint firstAttribute="bottom" secondItem="L1k-Vd-vCb" secondAttribute="bottom" constant="30" id="pVZ-eP-5X1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pNJ-B6-G0I"/>
                     </view>
+                    <connections>
+                        <outlet property="leftButton" destination="ITn-Me-Gng" id="S55-oe-5PT"/>
+                        <outlet property="midButton" destination="MsQ-iP-6VQ" id="TkQ-fp-DfO"/>
+                        <outlet property="rightButton" destination="sRn-Uj-qBQ" id="dA1-93-cIN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UqU-qT-eKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="82.400000000000006" y="-202.84857571214394"/>
         </scene>
     </scenes>
 </document>
